@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.btns button {
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 2rem;
+  background-color: transparent;
+  color: white;
+}
+
+.btns button i {
+  font-size: 32px;
+}
+
+#boton1 {
+  color: #509cce;
+}
+
+#boton2 {
+  color: #f3d630;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards {
+  margin: 2rem;
+  background-color: aliceblue;
+  width: 450px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 5px 32px -5px rgba(186, 186, 186, 0.75);
+  -webkit-box-shadow: 1px 5px 32px -5px rgba(186, 186, 186, 0.75);
+  -moz-box-shadow: 1px 5px 32px -5px rgba(186, 186, 186, 0.75);
+  transition: transform 0.8s ease;
+}
+.cards:hover {
+  transform: scale(1.1);
+}
+
+.cards__image img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  padding: 16px;
+  background-color: rgba(249, 251, 255, 0.719);
+}
+
+.card__title {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__parrafo {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5e727b;
+  margin-left: 5px;
+}
+
+.card__btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  background: rgb(29, 30, 30);
+  background: linear-gradient(
+    90deg,
+    rgba(29, 30, 30, 1) 0%,
+    rgba(115, 113, 129, 1) 100%
+  );
+}
+
+/* Estilos para el modo luna (background azul noche) */
+.moon-mode {
+  background-color: #2c3e50;
+  color: #fff;
+  transition: background-color 1s ease;
+}
+
+.moon-mode h2 {
+  color: #fff;
+  transition: color 1s ease;
+}
+
+.moon-mode .card__title {
+  color: #3e848d;
+  transition: color 1s ease;
+}
+
+/* Estilos para el modo sol (background amarillo) */
+.sun-mode {
+  background-color: #fff;
+  color: #333;
+  transition: all 1s ease;
+}
+
+.sun-mode h2 {
+  color: black;
+  transition: color 1s ease;
+}
+
+.sun-mode .card__title {
+  color: black;
+  transition: color 1s ease;
+}
+
+@media screen and (max-width: 380px) {
+  header h2 {
+    font-size: 3rem;
+  }
+  .cards {
+    margin-top: 0.65rem;
+  }
+}
